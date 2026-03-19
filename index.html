@@ -1,0 +1,664 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Silverstone Wealth Management LLC — Premium investment management firm. Diversified global portfolios built on transparency, discipline, and long-term value creation." />
+  <meta name="keywords"
+    content="Silverstone Wealth Management LLC, investment, asset management, private wealth, portfolio, hedge fund" />
+  <title>Silverstone Wealth Management LLC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════
+     NAVBAR
+═══════════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero">
+        <img src="images/logo.png" alt="Silverstones Logo" />
+        <span class="nav-logo-text">Silver<span>stones</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#mission" data-en="Mission" data-ru="Миссия">Mission</a></li>
+        <li><a href="#who-we-are" data-en="Who We Are" data-ru="О нас">Who We Are</a></li>
+        <li><a href="#philosophy" data-en="Philosophy" data-ru="Философия">Philosophy</a></li>
+        <li><a href="#team" data-en="Team" data-ru="Команда">Team</a></li>
+        <li><a href="#directions" data-en="Directions" data-ru="Направления">Directions</a></li>
+        <li><a href="#contacts" data-en="Contacts" data-ru="Контакты">Contacts</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <div class="lang-switcher">
+          <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+          <button class="lang-btn" id="btn-ru" onclick="setLang('ru')">RU</button>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#mission" onclick="closeMobile()" data-en="Mission" data-ru="Миссия">Mission</a>
+    <a href="#who-we-are" onclick="closeMobile()" data-en="Who We Are" data-ru="О нас">Who We Are</a>
+    <a href="#philosophy" onclick="closeMobile()" data-en="Philosophy" data-ru="Философия">Philosophy</a>
+    <a href="#team" onclick="closeMobile()" data-en="Team" data-ru="Команда">Team</a>
+    <a href="#directions" onclick="closeMobile()" data-en="Directions" data-ru="Направления">Directions</a>
+    <a href="#contacts" onclick="closeMobile()" data-en="Contacts" data-ru="Контакты">Contacts</a>
+    <div class="mobile-lang">
+      <button class="lang-btn" onclick="setLang('en');closeMobile()" id="m-btn-en">EN</button>
+      <button class="lang-btn" onclick="setLang('ru');closeMobile()" id="m-btn-ru">RU</button>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-logo-bg"
+      style="position: absolute; inset: 0; background: url('images/logo.png') center/contain no-repeat; opacity: 0.08; filter: blur(3px); pointer-events: none; z-index: 1; transform: scale(0.9); margin: 5%;">
+    </div>
+    <div class="hero-content" style="z-index: 2; position: relative;">
+      <p class="hero-tagline" data-en="Global Investment Management" data-ru="Глобальное управление активами">
+        Global Investment Management
+      </p>
+      <h1 class="hero-title">
+        <span data-en="Where Precision <em>Meets</em> Vision" data-ru="Где точность <em>встречается</em> с видением">
+          Where Precision <em>Meets</em> Vision
+        </span>
+      </h1>
+      <p class="hero-desc"
+        data-en="Silverstone Wealth Management LLC partners with discerning investors to build resilient, diversified portfolios — rooted in rigorous analysis and guided by enduring principles."
+        data-ru="Silverstone Wealth Management LLC сотрудничает с требовательными инвесторами, формируя устойчивые, диверсифицированные портфели — основанные на глубоком анализе и выверенные на принципах долгосрочной инвестиционной дисциплины.">
+        Silverstone Wealth Management LLC partners with discerning investors to build resilient, diversified portfolios
+        — rooted in rigorous
+        analysis and guided by enduring principles.
+      </p>
+      <a href="#mission" class="btn-primary">
+        <span data-en="Discover More" data-ru="Узнать больше">Discover More</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12" />
+          <polyline points="12 5 19 12 12 19" />
+        </svg>
+      </a>
+    </div>
+    <div class="hero-scroll">
+      <span data-en="Scroll" data-ru="Листайте">Scroll</span>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="6 9 12 15 18 9" />
+      </svg>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+     MISSION
+═══════════════════════════════════════════ -->
+  <section id="mission">
+    <div class="container">
+      <div class="mission-grid">
+
+        <div class="mission-text reveal">
+          <p class="section-eyebrow" data-en="Our Mission" data-ru="Наша миссия">Our Mission</p>
+          <h2 class="section-title" data-en="Built on Integrity.<br>Driven by Results."
+            data-ru="Основано на честности.<br>Нацелено на результат.">
+            Built on Integrity.<br>Driven by Results.
+          </h2>
+          <div class="gold-divider"></div>
+          <p data-en="At Silverstone Wealth Management LLC, our mission is to create enduring wealth for our clients through disciplined investment strategies. We believe that sustainable returns are born from deep research, prudent risk management, and an unwavering commitment to our clients' best interests."
+            data-ru="В Silverstone Wealth Management LLC наша миссия — создавать долгосрочное благосостояние для наших клиентов за счёт системного и выверенного подхода к инвестициям. Мы убеждены, что устойчивые результаты достигаются благодаря глубокому анализу, взвешенному управлению рисками и неизменной ориентации на интересы клиента.">
+            At Silverstone Wealth Management LLC, our mission is to create enduring wealth for our clients through
+            disciplined investment
+            strategies. We believe that sustainable returns are born from deep research, prudent risk management, and an
+            unwavering commitment to our clients' best interests.
+          </p>
+          <p data-en="We operate with full transparency — no hidden fees, no conflicts of interest. Every decision we make is guided by one simple question: what is best for our client?"
+            data-ru="Мы работаем с полной прозрачностью — без скрытых комиссий и конфликтов интересов. Каждое наше решение основывается на одном ключевом принципе: что наилучшим образом отвечает интересам клиента.">
+            We operate with full transparency — no hidden fees, no conflicts of interest. Every decision we make is
+            guided by one simple question: what is best for our client?
+          </p>
+        </div>
+
+        <div class="mission-stats reveal reveal-delay-2">
+          <div class="stat-card">
+            <div class="stat-number">$250M+</div>
+            <div class="stat-label" data-en="Assets Under Management" data-ru="Активы под управлением">Assets Under
+              Management</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">10+</div>
+            <div class="stat-label" data-en="Years of Excellence" data-ru="Лет успешной работы">Years of Excellence
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">8+</div>
+            <div class="stat-label" data-en="Institutional Clients" data-ru="Институциональных клиентов">Institutional
+              Clients</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">8</div>
+            <div class="stat-label" data-en="Global Markets" data-ru="Глобальных рынков">Global Markets</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+     WHO WE ARE
+═══════════════════════════════════════════ -->
+  <section id="who-we-are">
+    <div class="container">
+      <div class="who-inner reveal"
+        style="background: url('images/investment_bg.png') center/cover no-repeat; border-radius: 12px; position: relative; padding: clamp(40px, 6vw, 80px) clamp(20px, 4vw, 60px); overflow: hidden; max-width: 900px; margin: 0 auto; box-shadow: 0 20px 40px rgba(0,0,0,0.5);">
+
+        <div class="who-img-overlay"
+          style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(13,20,33,0.92) 0%, rgba(13,20,33,0.7) 100%);">
+        </div>
+
+        <div class="who-text" style="position: relative; z-index: 2;">
+          <p class="section-eyebrow" data-en="Who We Are" data-ru="Кто мы">Who We Are</p>
+          <h2 class="section-title" data-en="Experience. Clarity. Trust." data-ru="Опыт. Ясность. Доверие.">
+            Experience. Clarity. Trust.
+          </h2>
+          <div class="gold-divider"></div>
+          <p data-en="Silverstone Wealth Management LLC is an independent investment management firm founded by a team of seasoned financial professionals with backgrounds spanning global asset management, investment banking, and institutional trading."
+            data-ru="Silverstone Wealth Management LLC — независимая компания по управлению инвестициями, основанная командой опытных финансовых профессионалов с опытом работы в глобальном управлении активами, инвестиционном банкинге и институциональной торговле.">
+            Silverstone Wealth Management LLC is an independent investment management firm founded by a team of seasoned
+            financial
+            professionals with backgrounds spanning global asset management, investment banking, and institutional
+            trading.
+          </p>
+          <p data-en="We are not a bank, not a brokerage — we are a pure investment manager. This independence allows us to act exclusively in our clients' interests, free from institutional pressures or product quotas."
+            data-ru="Мы независимая управляющая компания, а не банк или брокер. Подобная независимость позволяет нам действовать исключительно в интересах клиентов, без институционального давления или планов продаж собственных продуктов.">
+            We are not a bank, not a brokerage — we are a pure investment manager. This independence allows us to act
+            exclusively in our clients' interests, free from institutional pressures or product quotas.
+          </p>
+
+          <div class="values-list" style="margin-top: 40px;">
+            <div class="value-item" style="display: flex; gap: 16px; margin-bottom: 32px;">
+              <div class="value-icon" style="font-size: 1.5rem; color: var(--gold); flex-shrink: 0;">⚖</div>
+              <div>
+                <h4 style="color: var(--white); margin-bottom: 12px;" data-en="Independence" data-ru="Независимость">
+                  Independence</h4>
+                <p style="margin-bottom: 12px; line-height: 1.6;">
+                  <span data-en="We act solely in your best interest"
+                    data-ru="Мы действуем исключительно в ваших интересах">We act solely in your best
+                    interest</span><br>
+                  <span data-en="We are not a bank. We are not a brokerage." data-ru="Мы не банк. Мы не брокер.">We are
+                    not a bank. We are not a brokerage.</span><br>
+                  <span data-en="We don’t sell in-house products or operate under sales quotas."
+                    data-ru="Мы не продаем собственные продукты и не работаем по планам продаж.">We don’t sell in-house
+                    products or operate under sales quotas.</span>
+                </p>
+                <p data-en="What this means for you:" data-ru="Что это значит для вас:"
+                  style="margin-bottom: 6px; color: var(--gold-light);">What this means for you:</p>
+                <ul
+                  style="margin-left: 20px; list-style-type: disc; margin-bottom: 16px; color: var(--silver); font-size: 0.95rem; line-height: 1.8;">
+                  <li data-en="no conflicts of interest" data-ru="никаких конфликтов интересов">no conflicts of interest
+                  </li>
+                  <li data-en="fully objective investment decisions"
+                    data-ru="полностью объективные инвестиционные решения">fully objective investment decisions</li>
+                  <li data-en="focus on your results, not product sales"
+                    data-ru="фокус на ваших результатах, а не на продажах продуктов">focus on your results, not product
+                    sales</li>
+                </ul>
+                <p style="font-weight: 500; color: var(--white);"
+                  data-en="You get truly independent wealth management — the way it should be."
+                  data-ru="Вы получаете по-настоящему независимое управление капиталом — так, как это должно быть.">You
+                  get truly independent wealth management — the way it should be.</p>
+              </div>
+            </div>
+            <div class="value-item" style="display: flex; gap: 16px; margin-bottom: 32px;">
+              <div class="value-icon" style="font-size: 1.5rem; color: var(--gold); flex-shrink: 0;">🔍</div>
+              <div>
+                <h4 style="color: var(--white); margin-bottom: 12px;" data-en="Deep Research" data-ru="Глубокий анализ">
+                  Deep Research</h4>
+                <p style="margin-bottom: 12px; line-height: 1.6;">
+                  <span data-en="Decisions driven by data, not guesswork"
+                    data-ru="Решения, основанные на данных, а не догадках">Decisions driven by data, not
+                    guesswork</span><br>
+                  <span data-en="We don’t follow the market — we analyze it."
+                    data-ru="Мы не следуем за рынком — мы его анализируем.">We don’t follow the market — we analyze
+                    it.</span><br>
+                  <span data-en="Every investment decision is backed by:"
+                    data-ru="Каждое инвестиционное решение подкреплено:">Every investment decision is backed by:</span>
+                </p>
+                <ul
+                  style="margin-left: 20px; list-style-type: disc; margin-bottom: 12px; color: var(--silver); font-size: 0.95rem; line-height: 1.8;">
+                  <li data-en="proprietary analytical models" data-ru="собственными аналитическими моделями">proprietary
+                    analytical models</li>
+                  <li data-en="macroeconomic analysis" data-ru="макроэкономическим анализом">macroeconomic analysis</li>
+                  <li data-en="real-time risk assessment" data-ru="оценкой рисков в реальном времени">real-time risk
+                    assessment</li>
+                </ul>
+                <p data-en="What this means for you:" data-ru="Что это значит для вас:"
+                  style="margin-bottom: 6px; color: var(--gold-light);">What this means for you:</p>
+                <ul
+                  style="margin-left: 20px; list-style-type: disc; margin-bottom: 16px; color: var(--silver); font-size: 0.95rem; line-height: 1.8;">
+                  <li data-en="more precise entry and exit points" data-ru="более точные точки входа и выхода">more
+                    precise entry and exit points</li>
+                  <li data-en="controlled risk exposure" data-ru="контролируемый уровень риска">controlled risk exposure
+                  </li>
+                  <li data-en="stability in volatile markets" data-ru="стабильность на волатильных рынках">stability in
+                    volatile markets</li>
+                </ul>
+                <p style="font-weight: 500; color: var(--white);" data-en="We invest based on facts, not opinions."
+                  data-ru="Мы инвестируем на основе фактов, а не мнений.">We invest based on facts, not opinions.</p>
+              </div>
+            </div>
+            <div class="value-item" style="display: flex; gap: 16px;">
+              <div class="value-icon" style="font-size: 1.5rem; color: var(--gold); flex-shrink: 0;">🌐</div>
+              <div>
+                <h4 style="color: var(--white); margin-bottom: 12px;" data-en="Global Reach" data-ru="Глобальный охват">
+                  Global Reach</h4>
+                <p style="margin-bottom: 12px; line-height: 1.6;">
+                  <span data-en="Investing without borders" data-ru="Инвестиции без границ">Investing without
+                    borders</span><br>
+                  <span
+                    data-en="We operate across 18 international markets to capture the best opportunities worldwide."
+                    data-ru="Мы работаем на 18 международных рынках, чтобы использовать лучшие возможности по всему миру.">We
+                    operate across 18 international markets to capture the best opportunities worldwide.</span><br>
+                  <span data-en="You gain access to:" data-ru="Вы получаете доступ к:">You gain access to:</span>
+                </p>
+                <ul
+                  style="margin-left: 20px; list-style-type: disc; margin-bottom: 12px; color: var(--silver); font-size: 0.95rem; line-height: 1.8;">
+                  <li data-en="global equities and fixed income"
+                    data-ru="глобальным акциям и инструментам с фиксированным доходом">global equities and fixed income
+                  </li>
+                  <li data-en="high-growth emerging markets" data-ru="быстрорастущим развивающимся рынкам">high-growth
+                    emerging markets</li>
+                  <li data-en="diversified investment strategies"
+                    data-ru="диверсифицированным инвестиционным стратегиям">diversified investment strategies</li>
+                </ul>
+                <p data-en="This allows you to:" data-ru="Это позволяет вам:"
+                  style="margin-bottom: 6px; color: var(--gold-light);">This allows you to:</p>
+                <ul
+                  style="margin-left: 20px; list-style-type: disc; margin-bottom: 16px; color: var(--silver); font-size: 0.95rem; line-height: 1.8;">
+                  <li data-en="reduce risk through diversification" data-ru="снизить риск за счет диверсификации">reduce
+                    risk through diversification</li>
+                  <li data-en="capture growth wherever it appears"
+                    data-ru="извлекать выгоду из роста, где бы он ни происходил">capture growth wherever it appears</li>
+                  <li data-en="avoid dependence on a single economy" data-ru="избежать зависимости от одной экономики">
+                    avoid dependence on a single economy</li>
+                </ul>
+                <p style="font-weight: 500; color: var(--white);"
+                  data-en="Your capital works globally — with maximum opportunity."
+                  data-ru="Ваш капитал работает глобально — с максимальными возможностями.">Your capital works globally
+                  — with maximum opportunity.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+     INVESTMENT PHILOSOPHY
+═══════════════════════════════════════════ -->
+  <section id="philosophy">
+    <div class="container">
+      <div class="text-center reveal">
+        <p class="section-eyebrow" data-en="Investment Philosophy" data-ru="Инвестиционная философия">Investment
+          Philosophy</p>
+        <h2 class="section-title" data-en="Three Pillars of Lasting Wealth" data-ru="Три основы сохранения капитала">
+          Three Pillars of Lasting Wealth
+        </h2>
+        <div class="gold-divider"></div>
+        <p class="section-subtitle"
+          data-en="Our investment framework is built around three core principles that have guided us through bull markets, recessions, and black-swan events alike."
+          data-ru="Наш инвестиционный подход строится на трёх ключевых принципах, которые направляли нас через бычьи рынки, рецессии и периоды высокой турбулентности.">
+          Our investment framework is built around three core principles that have guided us through bull markets,
+          recessions, and black-swan events alike.
+        </p>
+      </div>
+
+      <div class="philosophy-grid">
+
+        <div class="pillar-card reveal reveal-delay-1">
+          <div class="pillar-icon">⬡</div>
+          <h3 data-en="Diversification" data-ru="Диверсификация">Diversification</h3>
+          <p data-en="We spread risk intelligently across asset classes, geographies, and sectors — ensuring no single event can derail a client's long-term objectives. From equities to alternatives, we engineer resilience into every portfolio."
+            data-ru="Мы интеллектуально распределяем риски между классами активов, географиями и секторами, гарантируя, что ни одно событие не подорвёт долгосрочные цели клиента. От акций до альтернативных инструментов — мы встраиваем устойчивость в каждый портфель.">
+            We spread risk intelligently across asset classes, geographies, and sectors — ensuring no single event can
+            derail a client's long-term objectives. From equities to alternatives, we engineer resilience into every
+            portfolio.
+          </p>
+        </div>
+
+        <div class="pillar-card reveal reveal-delay-2">
+          <div class="pillar-icon">💧</div>
+          <h3 data-en="Liquidity" data-ru="Ликвидность">Liquidity</h3>
+          <p data-en="We maintain rigorous liquidity standards so our clients can access their capital when they need it. Every allocation decision factors in not just return potential, but realisability — so you are never caught off guard."
+            data-ru="Мы поддерживаем строгие стандарты ликвидности, чтобы клиенты могли получить доступ к капиталу когда нужно. Каждое инвестиционное решение учитывает не только потенциальную доходность, но и реализуемость активов.">
+            We maintain rigorous liquidity standards so our clients can access their capital when they need it. Every
+            allocation decision factors in not just return potential, but realisability — so you are never caught off
+            guard.
+          </p>
+        </div>
+
+        <div class="pillar-card reveal reveal-delay-3">
+          <div class="pillar-icon">📊</div>
+          <h3 data-en="Transparent Risk" data-ru="Прозрачность рисков">Transparent Risk</h3>
+          <p data-en="Risk is not avoided — it is understood, priced, and managed with precision. We provide our clients with clear, regular reporting on portfolio risk metrics, drawdown scenarios, and stress tests. No surprises."
+            data-ru="Риск не избегается — он понимается, оценивается и управляется с точностью. Мы регулярно предоставляем клиентам чёткую отчётность по метрикам риска, сценариям просадок и стресс-тестам. Никаких сюрпризов.">
+            Risk is not avoided — it is understood, priced, and managed with precision. We provide our clients with
+            clear, regular reporting on portfolio risk metrics, drawdown scenarios, and stress tests. No surprises.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+     TEAM
+═══════════════════════════════════════════ -->
+  <section id="team">
+    <div class="container">
+      <div class="text-center reveal">
+        <p class="section-eyebrow" data-en="Our Team" data-ru="Наша команда">Our Team</p>
+        <h2 class="section-title" data-en="The Minds Behind the Strategy" data-ru="Создатели нашей стратегии">
+          The Minds Behind the Strategy
+        </h2>
+        <div class="gold-divider"></div>
+        <p class="section-subtitle"
+          data-en="Our team combines decades of experience in finance, law, and asset management to deliver exceptional results for our clients."
+          data-ru="Наша команда объединяет десятилетия опыта в финансах, праве и управлении активами для достижения исключительных результатов.">
+          Our team combines decades of experience in finance, law, and asset management to deliver exceptional results
+          for our clients.
+        </p>
+      </div>
+
+      <div class="team-grid">
+
+        <!-- Alexey Makarenko -->
+        <div class="team-card reveal reveal-delay-1">
+          <img src="images/alexey.png" alt="Alexey Makarenko" class="team-photo" />
+          <div class="team-info">
+            <div class="team-name">Aleksei Makarenko</div>
+            <div class="team-role" data-en="Founder & Chief Investment Officer"
+              data-ru="Основатель и директор по инвестициям">Founder & Chief Investment Officer</div>
+            <p class="team-bio"
+              data-en="Alexey brings over 18 years of experience in global asset management and quantitative finance. He began his career at a tier-1 investment bank in Moscow before moving to London and Helsinki to lead multi-asset strategies for institutional clients. His expertise spans listed equities, fixed income, and alternative investments. Alexey holds an MSc in Finance from the London School of Economics and is CFA charterholder."
+              data-ru="Алексей обладает более чем 18-летним опытом в сфере глобального управления активами и количественных финансов. Он начал карьеру в инвестиционном банке первого эшелона в Москве, затем переехал в Лондон и Хельсинки, где руководил мультиактивными стратегиями для институциональных клиентов. Его экспертиза охватывает акции, инструменты с фиксированным доходом и альтернативные инвестиции. Алексей имеет степень магистра финансов Лондонской школы экономики и является обладателем статуса CFA.">
+              Alexey brings over 18 years of experience in global asset management and quantitative finance. He began
+              his career at a tier-1 investment bank in Moscow before moving to London and Helsinki. His expertise spans
+              listed equities, fixed income, and alternative investments. Alexey holds an MSc in Finance from the London
+              School of Economics.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timur Kupeshev -->
+        <div class="team-card reveal reveal-delay-2">
+          <div class="team-photo-placeholder">
+            <div class="cs-icon">👤</div>
+            <div class="cs-text" data-en="Photo coming soon" data-ru="Фото скоро будет">Photo coming soon</div>
+          </div>
+          <div class="team-info">
+            <div class="team-name">Timur Kupeshev</div>
+            <div class="team-role" data-en="Partner & Head of Legal Affairs"
+              data-ru="Партнёр и руководитель юридического департамента">Partner & Head of Legal Affairs</div>
+            <p class="team-bio"
+              data-en="Timur is a specialist in international law and cross-border financial regulation with 14 years of practice across European and US jurisdictions. He has advised major investment funds on structuring, compliance, and regulatory strategy. Timur ensures that all Silverstone Wealth Management LLC operations meet the highest legal standards and that client assets are fully protected under applicable law."
+              data-ru="Тимур — специалист в области международного права и трансграничного финансового регулирования с 14-летней практикой в европейских юрисдикциях и США. Он консультировал крупные инвестиционные фонды по вопросам структурирования, комплаенса и регуляторной стратегии. Тимур обеспечивает соответствие всей деятельности Silverstone Wealth Management LLC высочайшим правовым стандартам.">
+              Timur is a specialist in international law and cross-border financial regulation with 14 years of practice
+              across European and US jurisdictions. He has advised major investment funds on structuring, compliance,
+              and regulatory strategy, ensuring full legal protection for client assets.
+            </p>
+          </div>
+        </div>
+
+        <!-- Petr Kamensky -->
+        <div class="team-card reveal reveal-delay-3">
+          <div class="team-photo-placeholder">
+            <div class="cs-icon">👤</div>
+            <div class="cs-text" data-en="Photo coming soon" data-ru="Фото скоро будет">Photo coming soon</div>
+          </div>
+          <div class="team-info">
+            <div class="team-name">Petr Kaminskiy</div>
+            <div class="team-role" data-en="Partner & Portfolio Manager" data-ru="Партнёр и портфельный управляющий">
+              Partner & Portfolio Manager</div>
+            <p class="team-bio"
+              data-en="Petr is a seasoned portfolio manager with deep expertise in alternative assets, private credit, and real assets. With 16 years of experience across private equity and hedge fund environments, he has consistently delivered risk-adjusted returns for institutional and ultra-high-net-worth clients. Petr oversees Silverstone Wealth Management LLC's alternative investment strategies and direct deal origination."
+              data-ru="Пётр — опытный портфельный управляющий с глубокой экспертизой в альтернативных активах, частном кредите и реальных активах. За 16 лет работы в среде прямых инвестиций и хедж-фондов он стабильно обеспечивал скорректированную на риск доходность для институциональных клиентов. Пётр контролирует альтернативные инвестиционные стратегии Silverstone Wealth Management LLC.">
+              Petr is a seasoned portfolio manager with deep expertise in alternative assets, private credit, and real
+              assets. With 16 years of experience across private equity and hedge fund environments, he has consistently
+              delivered risk-adjusted returns for institutional clients.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+     INVESTMENT DIRECTIONS
+═══════════════════════════════════════════ -->
+  <section id="directions">
+    <div class="container">
+      <div class="text-center reveal">
+        <p class="section-eyebrow" data-en="Investment Directions" data-ru="Инвестиционные направления">Investment
+          Directions</p>
+        <h2 class="section-title" data-en="Where We Deploy Capital" data-ru="Направления инвестирования">
+          Where We Deploy Capital
+        </h2>
+        <div class="gold-divider"></div>
+        <p class="section-subtitle"
+          data-en="We offer a broad spectrum of investment strategies spanning public markets, private assets, and structured solutions — tailored to each client's goals, horizon, and risk profile."
+          data-ru="Мы предлагаем широкий спектр инвестиционных стратегий на публичных рынках, в частных активах и структурированных решениях — адаптированных к целям, горизонту и риск-профилю каждого клиента.">
+          We offer a broad spectrum of investment strategies spanning public markets, private assets, and structured
+          solutions — tailored to each client's goals, horizon, and risk profile.
+        </p>
+      </div>
+
+      <div class="directions-grid">
+
+        <div class="direction-card reveal reveal-delay-1">
+          <div class="direction-num">01</div>
+          <h3 data-en="Global Equity Strategies" data-ru="Глобальные стратегии акций">Global Equity Strategies</h3>
+          <p data-en="Long-only and long/short equity strategies across developed and emerging markets. Grounded in fundamental analysis with quantitative risk overlays for superior risk-adjusted performance."
+            data-ru="Стратегии акций long-only и long/short на развитых и развивающихся рынках. Основаны на фундаментальном анализе с количественными риск-оверлеями.">
+            Long-only and long/short equity strategies across developed and emerging markets. Grounded in fundamental
+            analysis with quantitative risk overlays for superior risk-adjusted performance.
+          </p>
+          <span class="direction-tag" data-en="Public Markets" data-ru="Публичные рынки">Public Markets</span>
+        </div>
+
+        <div class="direction-card reveal reveal-delay-2">
+          <div class="direction-num">02</div>
+          <h3 data-en="Fixed Income & Credit" data-ru="Фиксированный доход и кредит">Fixed Income & Credit</h3>
+          <p data-en="Sovereign bonds, investment-grade and high-yield corporate credit, and structured credit instruments. Active duration management and credit selection to maximise yield within defined risk constraints."
+            data-ru="Государственные облигации, корпоративный кредит инвестиционного уровня и высокодоходный, структурированные кредитные инструменты. Активное управление дюрацией и отбор кредитов.">
+            Sovereign bonds, investment-grade and high-yield corporate credit, and structured credit instruments. Active
+            duration management and credit selection to maximise yield within defined risk constraints.
+          </p>
+          <span class="direction-tag" data-en="Fixed Income" data-ru="Фикс. доход">Fixed Income</span>
+        </div>
+
+        <div class="direction-card reveal reveal-delay-3">
+          <div class="direction-num">03</div>
+          <h3 data-en="Alternative Investments" data-ru="Альтернативные инвестиции">Alternative Investments</h3>
+          <p data-en="Exposure to hedge funds, commodities, infrastructure, and real estate investment trusts. Alternatives reduce correlation to traditional markets and provide portfolio stabilisation during volatility spikes."
+            data-ru="Хедж-фонды, сырьевые товары, инфраструктура и инвестиционные фонды недвижимости. Альтернативные инвестиции снижают корреляцию с традиционными рынками и стабилизируют портфель при волатильности.">
+            Exposure to hedge funds, commodities, infrastructure, and real estate investment trusts. Alternatives reduce
+            correlation to traditional markets and provide portfolio stabilisation during volatility spikes.
+          </p>
+          <span class="direction-tag" data-en="Alternatives" data-ru="Альтернативы">Alternatives</span>
+        </div>
+
+        <div class="direction-card reveal reveal-delay-4">
+          <div class="direction-num">04</div>
+          <h3 data-en="Multi-Asset Portfolios" data-ru="Мультиактивные портфели">Multi-Asset Portfolios</h3>
+          <p data-en="Bespoke balanced portfolios combining equities, bonds, alternatives, and cash in a single, dynamically managed vehicle. Ideal for clients seeking comprehensive wealth management in one solution."
+            data-ru="Индивидуальные сбалансированные портфели, объединяющие акции, облигации, альтернативы и денежные средства в одном динамически управляемом инструменте. Идеально для комплексного управления капиталом.">
+            Bespoke balanced portfolios combining equities, bonds, alternatives, and cash in a single, dynamically
+            managed vehicle. Ideal for clients seeking comprehensive wealth management in one solution.
+          </p>
+          <span class="direction-tag" data-en="Multi-Asset" data-ru="Мультиактив">Multi-Asset</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+     CONTACTS
+═══════════════════════════════════════════ -->
+  <section id="contacts">
+    <div class="container">
+      <div class="contacts-grid">
+
+        <div class="contact-info reveal">
+          <p class="section-eyebrow" data-en="Contact Us" data-ru="Контакты">Contact Us</p>
+          <h2 class="section-title" data-en="Let's Start a Conversation" data-ru="Свяжитесь с нами">
+            Let's Start a Conversation
+          </h2>
+          <div class="gold-divider"></div>
+          <p data-en="Whether you are an individual investor, a family office, or an institutional client, we would welcome the opportunity to discuss how Silverstone Wealth Management LLC can help you achieve your financial objectives."
+            data-ru="Независимо от того, являетесь ли вы частным инвестором, семейным офисом или институциональным клиентом, мы будем рады обсудить, как Silverstone Wealth Management LLC может помочь достичь ваших финансовых целей.">
+            Whether you are an individual investor, a family office, or an institutional client, we would welcome the
+            opportunity to discuss how Silverstone Wealth Management LLC can help you achieve your financial objectives.
+          </p>
+
+          <div class="contact-items">
+            <a class="contact-item" href="tel:+358406639505">
+              <div class="contact-icon">📞</div>
+              <div class="contact-detail">
+                <h4 data-en="Phone" data-ru="Телефон">Phone</h4>
+                <span>+358 40 663 9505</span>
+              </div>
+            </a>
+            <a class="contact-item" href="mailto:ditrix.live@gmail.com">
+              <div class="contact-icon">✉</div>
+              <div class="contact-detail">
+                <h4 data-en="Email" data-ru="Электронная почта">Email</h4>
+                <span>ditrix.live@gmail.com</span>
+              </div>
+            </a>
+            <div class="contact-item">
+              <div class="contact-icon">🌍</div>
+              <div class="contact-detail">
+                <h4 data-en="Registered Office" data-ru="Юридический адрес">Registered Office</h4>
+                <span data-en="Helsinki, Finland — EU" data-ru="Хельсинки, Финляндия — ЕС">Helsinki, Finland — EU</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal reveal-delay-2">
+          <h3 data-en="Send Us a Message" data-ru="Написать нам">Send Us a Message</h3>
+          <form id="contact-form" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <label data-en="Full Name" data-ru="Полное имя">Full Name</label>
+              <input type="text" id="cf-name" placeholder="John Smith" required />
+            </div>
+            <div class="form-group">
+              <label data-en="Email Address" data-ru="Электронная почта">Email Address</label>
+              <input type="email" id="cf-email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label data-en="Subject" data-ru="Тема">Subject</label>
+              <select id="cf-subject">
+                <option data-en="Investment Inquiry" data-ru="Инвестиционный запрос">Investment Inquiry</option>
+                <option data-en="Portfolio Management" data-ru="Управление портфелем">Portfolio Management</option>
+                <option data-en="Private Wealth Solutions" data-ru="Решения для частного капитала">Private Wealth
+                  Solutions</option>
+                <option data-en="General Question" data-ru="Общий вопрос">General Question</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label data-en="Message" data-ru="Сообщение">Message</label>
+              <textarea id="cf-message" placeholder="Tell us about your investment goals..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <span data-en="Send Message" data-ru="Отправить">Send Message</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#hero" class="footer-logo">
+            <img src="images/logo.png" alt="Silverstone Wealth Management LLC" />
+            <span class="footer-logo-text">Silver<span>stones</span></span>
+          </a>
+          <p class="footer-desc"
+            data-en="Premium investment management. Building enduring wealth through disciplined strategy and global expertise."
+            data-ru="Премиальное управление инвестициями. Создание долгосрочного богатства через дисциплинированную стратегию и глобальную экспертизу.">
+            Premium investment management. Building enduring wealth through disciplined strategy and global expertise.
+          </p>
+        </div>
+
+        <div class="footer-links" style="display: flex; gap: 48px; flex-wrap: wrap;">
+          <div class="footer-links-col">
+            <h5 data-en="Navigate" data-ru="Навигация">Navigate</h5>
+            <ul>
+              <li><a href="#mission" data-en="Our Mission" data-ru="Наша миссия">Our Mission</a></li>
+              <li><a href="#who-we-are" data-en="Who We Are" data-ru="Кто мы">Who We Are</a></li>
+              <li><a href="#philosophy" data-en="Philosophy" data-ru="Философия">Philosophy</a></li>
+              <li><a href="#team" data-en="Our Team" data-ru="Наша команда">Our Team</a></li>
+              <li><a href="#directions" data-en="Directions" data-ru="Направления">Directions</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-col">
+            <h5 data-en="Legal" data-ru="Юридическое">Legal</h5>
+            <ul>
+              <li><a href="privacy-policy.html" data-en="Privacy Policy" data-ru="Политика конфиденциальности">Privacy
+                  Policy</a></li>
+              <li><a href="#contacts" data-en="Contact" data-ru="Контакты">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy"
+          data-en="© 2026 Silverstone Wealth Management LLC Investment Management. All rights reserved."
+          data-ru="© 2026 Silverstone Wealth Management LLC Investment Management. Все права защищены.">
+          © 2026 Silverstone Wealth Management LLC Investment Management. All rights reserved.
+        </p>
+        <div class="footer-policy">
+          <a href="privacy-policy.html" data-en="Privacy Policy" data-ru="Политика конфиденциальности">Privacy
+            Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
